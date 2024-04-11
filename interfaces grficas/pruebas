@@ -1,0 +1,10 @@
+from tkinter import *
+
+raiz = Tk() # creamos una ventana 
+raiz.title("Ventana de pruebas") # colocamos un titulo aa la ventana
+raiz.resizable(0,0) # impide la modificacion de la ventana, funciona con valores boolean o "1" y "0". El primer termino corresponde al "x" (width) y el otro a "y" (height)
+raiz.iconbitmap("C:/Users/campo/OneDrive/Escritorio/python/python/programas/imagenes/descarga_1.ico") # Es para cambiar el icono, le colocamos la ruta de la foto. Usar slash normal
+raiz.geometry("650x480") # Dimensiones de la ventana
+# configuracion de la ventana. BG es background y le definimos el color, 
+raiz.config(bg="blue")
+raiz.mainloop() # la desplegamos, es un bucle infinito para mostrarla. Esto debe estar siempre al final
