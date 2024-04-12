@@ -1,9 +1,22 @@
-x = int(input("Ingrese un número: "))
+x = int(input("Ingrese numero de integrantes: "))
 
-while x < 0 or x > 100:
-    x = int(input("Ingrese un número valido: "))
+while x < 0:
+    x = int(input("Ingrese numero de integrantes validos: "))
 
-y = int(input("Ingrese un número: "))
+precio = 0
+for x in range(x):
+    personas = int(input(f"Ingrese la edad de la persona {x+1}: "))
+    
+    while personas < 0 or personas >= 90:
+        personas = int(input(f"Ingrese la edad de la persona {x+1} valida: "))
+    
+    if personas < 4:
+        precio += 0
+    elif personas >= 4 and personas < 18:
+        precio += 5000
+    elif personas >= 18 and personas < 65:
+        precio += 10000
+    else:
+        precio += 3000
 
-while y < 0 or y > 100:
-    y = int(input("Ingrese un número valido: "))
+print(f"El precio total es: ${precio}")
