@@ -1,6 +1,9 @@
-total = 0
+x = int(input("Ingrese un número: "))
 
-while True:
-    print(total)
-    total += 1
-print(total)
+while x < 0 or x > 100:
+    x = int(input("Ingrese un número valido: "))
+
+y = int(input("Ingrese un número: "))
+
+while y < 0 or y > 100:
+    y = int(input("Ingrese un número valido: "))
