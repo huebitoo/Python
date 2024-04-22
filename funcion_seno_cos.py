@@ -1,22 +1,11 @@
-def fibunacci(n):
-    if n == 1 or n == 0:
-        return 1
-    else:
-        return fibunacci(n-1) + fibunacci(n-2)
+# NUMERO NARCISISTA ES QUE LA SUMA DE LOS DIGITOS ELEVADOS A LA CANTIDAD DE DIGITOS ES IGUAL AL NUMERO EJEMPLO EL NUMERO 153
 
 
-for x in range(20): # Cuantos numeros de fibunacci quiero
-    print(fibunacci(x))
+def narcisista(numero):
+    numero = str(numero)
+    narcisista = 0
+    narcisista = sum((int(i)**len(numero) for i in numero)) # ES UNA LISTA DE COMPRESION
+    return narcisista == int(numero)
 
 
-# METODO CON WHILE
-a = 0
-b = 1
-c = 1
-i = 0
-while (i < 10):
-    c = a + b
-    a = b
-    b = c
-    i += 1
-    print(c)
+print(narcisista(153))
